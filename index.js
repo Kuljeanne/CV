@@ -79,7 +79,7 @@ const BURGER = document.querySelector(".burger");
 const MODILE_MENU_CONTAINER = document.querySelector(".menu_mobile");
 
 const menu = document.querySelector(".menu__inner").cloneNode(1);
-menu.classList.add('menu__inner_mobile')
+menu.classList.add("menu__inner_mobile");
 
 BURGER.addEventListener("click", burgerHandler);
 
@@ -94,14 +94,15 @@ function renderPopup() {
   MODILE_MENU_CONTAINER.appendChild(menu);
 }
 
-const links = Array.from(menu.children);
+window.addEventListener("click", (e) => {
+  const target = e.target;
 
-links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
+  if (target.closest(".background") || target.closest(".menu__item")) {
+    closeOnClick();
+  }
 });
 
 function closeOnClick() {
   MODILE_MENU_CONTAINER.classList.remove("open");
   BURGER.classList.remove("active");
-  BODY.classList.remove("noscroll");
 }
