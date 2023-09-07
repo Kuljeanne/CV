@@ -57,6 +57,7 @@ const createProjectCard = ({ title, link, imgSrc, description }) => {
   const projectTitle = createNode("h3", "projects__title", title);
   const text = createNode("p", "projects__text", description);
   const btn = createNode("a", "btn", "Show project");
+  btn.classList.add('projects__btn')
   btn.href = link;
   btn.target = "_blank";
   card.append(background, projectTitle, text, btn);

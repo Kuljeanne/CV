@@ -207,6 +207,11 @@ section {
   background-size: cover;
 }
 
+.projects__btn {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
 /* education */
 
 .education__info {
