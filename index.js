@@ -1,3 +1,5 @@
+//  render projects
+
 const PROJECTS = [
   {
     title: "Plants",
@@ -57,7 +59,7 @@ const createProjectCard = ({ title, link, imgSrc, description }) => {
   const projectTitle = createNode("h3", "projects__title", title);
   const text = createNode("p", "projects__text", description);
   const btn = createNode("a", "btn", "Show project");
-  btn.classList.add('projects__btn')
+  btn.classList.add("projects__btn");
   btn.href = link;
   btn.target = "_blank";
   card.append(background, projectTitle, text, btn);
@@ -70,3 +72,36 @@ PROJECTS.map(({ title, link, imgSrc, description }) => {
     createProjectCard({ title, link, imgSrc, description })
   );
 });
+
+// burger menu
+
+const BURGER = document.querySelector(".burger");
+const MODILE_MENU_CONTAINER = document.querySelector(".menu_mobile");
+
+const menu = document.querySelector(".menu__inner").cloneNode(1);
+menu.classList.add('menu__inner_mobile')
+
+BURGER.addEventListener("click", burgerHandler);
+
+function burgerHandler(e) {
+  e.preventDefault();
+  MODILE_MENU_CONTAINER.classList.toggle("open");
+  BURGER.classList.toggle("active");
+  renderPopup();
+}
+
+function renderPopup() {
+  MODILE_MENU_CONTAINER.appendChild(menu);
+}
+
+const links = Array.from(menu.children);
+
+links.forEach((link) => {
+  link.addEventListener("click", closeOnClick);
+});
+
+function closeOnClick() {
+  MODILE_MENU_CONTAINER.classList.remove("open");
+  BURGER.classList.remove("active");
+  BODY.classList.remove("noscroll");
+}
