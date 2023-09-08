@@ -30,7 +30,7 @@ const PROJECTS = [
   },
   {
     title: "Rock, Papper, Scissors",
-    link: "https://kuljeanne.netlify.app",
+    link: "https://kuljeanne.github.io/RockPappperScissors/",
     imgSrc: "assets/projects-img/rock-papper-scissors.jpg",
     description: "Browser online game.",
   },
