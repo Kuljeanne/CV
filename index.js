@@ -37,7 +37,7 @@ const PROJECTS = [
   {
     title: "KeyBoard",
     link: "https://kuljeanne.github.io/virtual-keyboard/dist/",
-    imgSrc: "assets/projects-img/keyboard.png",
+    imgSrc: "assets/projects-img/keyboard.jpg",
     description:
       "Virtual keyboard. For printing you can use either a phisical keyboard or the mouse",
   },
