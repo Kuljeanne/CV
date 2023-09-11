@@ -16,7 +16,7 @@ const PROJECTS = [
   },
   {
     title: "Momentum",
-    link: "https://rolling-scopes-school.github.io/kuljeanne-JSFEPRESCHOOL2022Q4/momentum/dist/",
+    link: "https://kuljeanne.github.io/momentum/dist/",
     imgSrc: "assets/projects-img/momentum.jpg",
     description:
       "A copy of an Chrome extansion featuring audio player, weather, inspirational quotes, google search. Input data is saved in localstorage",
@@ -30,7 +30,7 @@ const PROJECTS = [
   },
   {
     title: "Rock, Papper, Scissors",
-    link: "https://kuljeanne.netlify.app",
+    link: "https://kuljeanne.github.io/RockPappperScissors/",
     imgSrc: "assets/projects-img/rock-papper-scissors.jpg",
     description: "Browser online game.",
   },
