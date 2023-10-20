@@ -2,24 +2,11 @@
 
 const PROJECTS = [
   {
-    title: "Plants",
-    link: "https://rolling-scopes-school.github.io/kuljeanne-JSFEPRESCHOOL2022Q4/plants/",
-    imgSrc: "assets/projects-img/plants.jpg",
+    title: "PokemonsFinder",
+    link: "https://pokemon-finder-l65ksp6ug-kuljeannes-projects.vercel.app/pikachu",
+    imgSrc: "assets/projects-img/pokemon.jpg",
     description:
-      "Wedsite for plants-shop. Made with HTML, SCSS, JavaScript, responsive",
-  },
-  {
-    title: "CSSBayan",
-    link: "https://kuljeanne.github.io/cssBayan",
-    imgSrc: "assets/projects-img/css-bayan.jpg",
-    description: "Accordion made with pure CSS",
-  },
-  {
-    title: "Momentum",
-    link: "https://kuljeanne.github.io/momentum/dist/",
-    imgSrc: "assets/projects-img/momentum.jpg",
-    description:
-      "A copy of an Chrome extansion featuring audio player, weather, inspirational quotes, google search. Input data is saved in localstorage",
+      "App for checking the info about pokemons. Made with Next.js, TypeScript, Tailwind, shadcn/ui",
   },
   {
     title: "Card Game",
@@ -32,7 +19,7 @@ const PROJECTS = [
     title: "Rock, Papper, Scissors",
     link: "https://kuljeanne.github.io/RockPappperScissors/",
     imgSrc: "assets/projects-img/rock-papper-scissors.jpg",
-    description: "Browser online game.",
+    description: "Browser online game. Made with pure JS",
   },
   {
     title: "KeyBoard",
@@ -40,6 +27,19 @@ const PROJECTS = [
     imgSrc: "assets/projects-img/keyboard.jpg",
     description:
       "Virtual keyboard. For printing you can use either a phisical keyboard or the mouse",
+  },
+  {
+    title: "Momentum",
+    link: "https://kuljeanne.github.io/momentum/dist/",
+    imgSrc: "assets/projects-img/momentum.jpg",
+    description:
+      "A copy of an Chrome extansion featuring audio player, weather, inspirational quotes, google search. Input data is saved in localstorage. Made with pure JS",
+  },
+  {
+    title: "CSSBayan",
+    link: "https://kuljeanne.github.io/cssBayan",
+    imgSrc: "assets/projects-img/css-bayan.jpg",
+    description: "Accordion made with pure CSS",
   },
 ];
 
